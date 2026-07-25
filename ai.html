@@ -54,19 +54,6 @@
             text-align: center;
             position: relative;
         }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            height: 300px;
-            background: #06b6d4;
-            filter: blur(150px);
-            opacity: 0.2;
-            z-index: -1;
-        }
         .hero h1 {
             font-size: 3.2rem;
             font-weight: 800;
@@ -82,16 +69,6 @@
             max-width: 600px;
             margin: 0 auto 40px auto;
             line-height: 1.6;
-        }
-        .image-banner {
-            max-width: 800px;
-            width: 100%;
-            height: 350px;
-            margin: 0 auto;
-            border-radius: 20px;
-            background: url('https://unsplash.com') center/cover;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
         }
         .features {
             padding: 80px 20px;
@@ -128,9 +105,10 @@
             background-size: cover;
             background-position: center;
         }
-        .img-1 { background-image: url('https://unsplash.com'); }
-        .img-2 { background-image: url('https://unsplash.com'); }
-        .img-3 { background-image: url('https://unsplash.com'); }
+        /* Fixed Direct Images URLs */
+        .img-1 { background-image: url('https://picsum.photos'); }
+        .img-2 { background-image: url('https://picsum.photos'); }
+        .img-3 { background-image: url('https://picsum.photos'); }
         
         .card h3 {
             font-size: 1.4rem;
@@ -167,7 +145,6 @@
     <section class="hero">
         <h1>Next-Gen AI Powered<br>Healthcare Clinic</h1>
         <p>Welcome to MedNex. We combine expert medical doctors with cutting-edge AI diagnostics to provide the most accurate treatment for you and your family.</p>
-        <div class="image-banner"></div>
     </section>
 
     <section class="features">
@@ -203,3 +180,4 @@
 
 </body>
 </html>
+
