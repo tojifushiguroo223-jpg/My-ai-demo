@@ -71,7 +71,7 @@
             line-height: 1.6;
         }
         .features {
-            padding: 80px 20px;
+            padding: 60px 20px;
             max-width: 1100px;
             margin: 0 auto;
         }
@@ -86,30 +86,32 @@
             gap: 30px;
         }
         .card {
-            background: rgba(255, 255, 255, 0.02);
+            background: rgba(255, 255, 255, 0.03);
             padding: 40px 30px;
             border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             transition: 0.3s;
+            text-align: center;
         }
         .card:hover {
             border-color: #06b6d4;
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(255, 255, 255, 0.06);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.1);
         }
-        .card-img {
-            width: 100%;
-            height: 180px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            background-size: cover;
-            background-position: center;
+        /* Premium Visual Icon Badges instead of images */
+        .card-icon-box {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(59, 130, 246, 0.1));
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            margin: 0 auto 25px auto;
         }
-        /* Fixed Direct Images URLs */
-        .img-1 { background-image: url('https://picsum.photos'); }
-        .img-2 { background-image: url('https://picsum.photos'); }
-        .img-3 { background-image: url('https://picsum.photos'); }
-        
         .card h3 {
             font-size: 1.4rem;
             margin-bottom: 12px;
@@ -151,17 +153,18 @@
         <h2>Our Premium Services</h2>
         <div class="grid">
             <div class="card">
-                <div class="card-img img-1"></div>
+                <div class="card-icon-box">🧬</div>
                 <h3>AI Assisted Diagnosis</h3>
                 <p>Advanced neural screening tools that help our specialist doctors analyze reports with 99.9% accuracy.</p>
             </div>
             <div class="card">
-                <div class="card-img img-2"></div>
+                <div class="card-icon-box">📊</div>
                 <h3>Smart Digital Health Records</h3>
                 <p>Your prescriptions and health tracking logs are safely managed in a cloud system accessible anytime.</p>
             </div>
             <div class="card">
                 <div class="card-img img-3"></div>
+                <div class="card-icon-box">⚡</div>
                 <h3>24/7 Smart Emergency Care</h3>
                 <p>Immediate ambulance routing and real-time medical staff support during critical health situations.</p>
             </div>
@@ -180,4 +183,3 @@
 
 </body>
 </html>
-
