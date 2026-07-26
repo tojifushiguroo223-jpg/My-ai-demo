@@ -3,121 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Clinic - Elite AI Healthcare</title>
+    <title>Anas Clinic - Elite AI Healthcare</title>
     
-    <!-- Stable Bootstrap 5 CSS (Infallible Loading) -->
+    <!-- Fallback Infallible Bootstrap 5 CSS -->
     <link href="https://jsdelivr.net" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome Premium Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
-    <!-- Premium Google Fonts -->
+    <!-- Corporate Luxury Google Font -->
     <link href="https://googleapis.com" rel="stylesheet">
     
     <style>
         body { 
             font-family: 'Space Grotesk', sans-serif; 
-            background-color: #030712; 
+            background-color: #020617; 
             color: #f8fafc;
             overflow-x: hidden;
-        }
-        
-        /* 🌌 GLOBAL LIVE BACKDROP ANIMATION (Badi Company Jaisa Feel) */
-        .animated-bg {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at 20% 30%, rgba(6, 182, 212, 0.15), transparent 40%),
-                        radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.12), transparent 45%);
-            z-index: -2;
-        }
-        
-        /* Floating Kinetic Energy Circles */
-        .orb {
-            position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.5; z-index: -1;
-        }
-        .orb-1 {
-            width: 400px; height: 400px; background: #06b6d4;
-            top: -10%; left: -10%; animation: floatAround 14s infinite alternate ease-in-out;
-        }
-        .orb-2 {
-            width: 500px; height: 500px; background: #3b82f6;
-            bottom: 10%; right: -10%; animation: floatAround 20s infinite alternate-reverse ease-in-out;
-        }
-        @keyframes floatAround {
-            0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(50px, 80px) scale(1.2); }
+            position: relative;
         }
 
-        /* 💎 GLASSMORPHISM PREMIUM UTILITIES */
-        .glass-nav {
-            background: rgba(3, 7, 18, 0.8) !important;
+        /* 🌌 EXTRA PREMIUM LIVE BACKGROUND ANIMATION */
+        .premium-bg {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: radial-gradient(circle at 10% 20%, rgba(6, 182, 212, 0.12) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(147, 51, 234, 0.1) 0%, transparent 50%),
+                        linear-gradient(to bottom, #020617, #070f2e);
+            z-index: -3;
+        }
+
+        /* Moving Cyber Grid Mesh */
+        .grid-overlay {
+            position: fixed; inset: 0;
+            background-image: linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -2;
+            animation: gridMove 20s linear infinite;
+        }
+        @keyframes gridMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 50px 50px; }
+        }
+
+        /* Continuous Cosmic Aurora Flow (Badi Company Jaisa Moving Aura) */
+        .aurora-sphere {
+            position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.6; z-index: -1;
+        }
+        .aurora-1 {
+            width: 450px; height: 450px; background: #06b6d4;
+            top: -5%; left: -5%; animation: pulseAura 12s infinite alternate ease-in-out;
+        }
+        .aurora-2 {
+            width: 550px; height: 550px; background: #3b82f6;
+            bottom: -10%; right: -5%; animation: pulseAura 18s infinite alternate-reverse ease-in-out;
+        }
+        @keyframes pulseAura {
+            0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 0.4; }
+            100% { transform: translate(80px, 50px) scale(1.2) rotate(90deg); opacity: 0.7; }
+        }
+
+        /* ✨ HIGH-TECH GLOW AND GLASS LAYOUTS */
+        .luxury-nav {
+            background: rgba(2, 6, 23, 0.75) !important;
+            backdrop-filter: blur(25px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .premium-card {
+            background: rgba(15, 23, 42, 0.4);
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-        }
-        .glass-card {
-            background: rgba(15, 23, 42, 0.5);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.04);
             border-radius: 24px;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .glass-card:hover {
-            border-color: rgba(6, 182, 212, 0.4);
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(6, 182, 212, 0.15);
+        .premium-card:hover {
+            border-color: rgba(6, 182, 212, 0.3);
+            transform: translateY(-10px) scale(1.01);
+            box-shadow: 0 30px 60px -15px rgba(6, 182, 212, 0.15);
         }
         
-        /* Text & Buttons gradients */
-        .gradient-text {
-            background: linear-gradient(135deg, #06b6d4, #3b82f6, #a855f7);
+        .gradient-title {
+            background: linear-gradient(135deg, #fff 30%, #a5f3fc 70%, #06b6d4 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .btn-premium {
+        .cyan-glow-text {
             background: linear-gradient(135deg, #06b6d4, #3b82f6);
-            color: #030712; font-weight: 700; border: none;
-            padding: 14px 32px; border-radius: 12px;
-            transition: all 0.3s;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
         }
-        .btn-premium:hover {
-            transform: translateY(-2px); box-shadow: 0 10px 25px rgba(6, 182, 212, 0.4); opacity: 0.95;
+        .btn-elite {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            color: #020617; font-weight: 700; border: none;
+            padding: 16px 36px; border-radius: 14px;
+            letter-spacing: 0.5px; transition: all 0.3s;
         }
-        .btn-outline-premium {
-            border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255,255,255,0.02);
-            color: #e2e8f0; padding: 14px 32px; border-radius: 12px; transition: all 0.3s;
-        }
-        .btn-outline-premium:hover {
-            background: rgba(255,255,255,0.08); color: #fff;
+        .btn-elite:hover {
+            transform: translateY(-3px); box-shadow: 0 15px 30px rgba(6, 182, 212, 0.35); opacity: 0.95;
         }
         .form-control, .form-select {
-            background: rgba(3, 7, 18, 0.7); border: 1px solid rgba(255,255,255,0.1);
-            color: #fff; border-radius: 12px; padding: 12px;
+            background: rgba(2, 6, 23, 0.7); border: 1px solid rgba(255,255,255,0.08);
+            color: #fff; border-radius: 12px; padding: 14px;
         }
         .form-control:focus, .form-select:focus {
-            background: rgba(3, 7, 18, 0.9); border-color: #06b6d4; color: #fff; box-shadow: none;
+            background: rgba(2, 6, 23, 0.9); border-color: #06b6d4; color: #fff; box-shadow: 0 0 15px rgba(6,182,212,0.1);
         }
     </style>
 </head>
 <body>
 
-    <!-- LIVE ANIMATION BACKGROUND LAYERS -->
-    <div class="animated-bg"></div>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
+    <!-- ANIMATED ATMOSPHERE BACKDROP -->
+    <div class="premium-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="aurora-sphere aurora-1"></div>
+    <div class="aurora-sphere aurora-2"></div>
 
     <!-- 1. NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top luxury-nav py-3">
         <div class="container">
             <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
-                <div class="d-flex align-items-center justify-content-center text-white" style="width: 40px; height: 40px; background: linear-gradient(135deg, #06b6d4, #3b82f6); border-radius: 10px;">
-                    <i class="fa-solid fa-square-h fs-5"></i>
+                <div class="d-flex align-items-center justify-content-center text-white" style="width: 42px; height: 42px; background: linear-gradient(135deg, #06b6d4, #3b82f6); border-radius: 12px; box-shadow: 0 0 20px rgba(6,182,212,0.2);">
+                    <i class="fa-solid fa-house-medical fs-5"></i>
                 </div>
-                <span>ARYAN <span style="color: #06b6d4; font-weight: 300;">CLINIC</span></span>
+                <span class="tracking-tight">ANAS <span style="color: #06b6d4; font-weight: 300;">CLINIC</span></span>
             </a>
             <div class="ms-auto d-none d-lg-flex align-items-center gap-4 me-4">
-                <a href="#home" class="nav-link text-secondary text-white-hover">Home</a>
-                <a href="#about" class="nav-link text-secondary text-white-hover">About Us</a>
-                <a href="#services" class="nav-link text-secondary text-white-hover">Services</a>
-                <a href="#appointment" class="nav-link text-secondary text-white-hover">Portal</a>
+                <a href="#home" class="nav-link text-white-50">Home</a>
+                <a href="#about" class="nav-link text-white-50">Intelligence</a>
+                <a href="#services" class="nav-link text-white-50">Departments</a>
             </div>
-            <a href="#appointment" class="btn btn-premium px-4 py-2">Book Slot</a>
+            <a href="#appointment" class="btn btn-elite px-4 py-2.5 fs-7">Book Slot</a>
         </div>
     </nav>
 
@@ -125,60 +139,54 @@
     <section id="home" class="container d-flex align-items-center min-vh-screen pt-5">
         <div class="row align-items-center w-100 py-5">
             <div class="col-lg-6 space-y-4 mb-5 mb-lg-0">
-                <div class="d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-pill mb-4" style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.2); color: #06b6d4; font-size: 12px; font-weight: 600; letter-spacing: 1px;">
-                     🧬 FUTURE OF CLINICAL INTELLIGENCE
+                <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill mb-4" style="background: rgba(6,182,212,0.06); border: 1px solid rgba(6,182,212,0.15); color: #06b6d4; font-size: 11px; font-weight: 600; letter-spacing: 1.5px;">
+                     🚀 NEXT-GENERATION QUANTUM CARE
                 </div>
-                <h1 class="display-3 fw-extrabold text-white tracking-tight mb-3" style="line-height: 1.15;">
-                    Next-Gen Healthcare <br><span class="gradient-text">For Future Living.</span>
+                <h1 class="display-3 fw-bold text-white mb-3 gradient-title" style="line-height: 1.15; letter-spacing: -1px;">
+                    Elite Medical Precision <br>At <span class="cyan-glow-text">Anas Clinic.</span>
                 </h1>
-                <p class="lead text-secondary text-light-50 mb-4 fw-light" style="max-w: 500px; color: #94a3b8 !important;">
-                    Aryan Clinic merges global medical excellence with adaptive AI synthesis. Get hyper-personalized diagnostics, virtual anatomy tracking, and luxurious healthcare environments.
+                <p class="lead mb-4 fw-light" style="max-width: 520px; color: #94a3b8; font-size: 17px; line-height: 1.7;">
+                    Experience healthcare engineered for the future. Anas Clinic integrates global clinical expertise with real-time deep diagnostics to secure your medical wellness.
                 </p>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="#appointment" class="btn btn-premium">Enter Client Portal</a>
-                    <a href="#services" class="btn btn-outline-premium"><i class="fa-solid fa-compass me-2"></i>Explore Tech Suite</a>
+                    <a href="#appointment" class="btn btn-elite">Secure Consultation Node</a>
                 </div>
             </div>
             <div class="col-lg-6 position-relative text-center">
-                <div class="position-absolute top-50 start-50 translate-middle rounded-4 blur-2xl opacity-25" style="width: 80%; height: 80%; background: linear-gradient(135deg, #06b6d4, #a855f7); filter: blur(50px);"></div>
-                <img src="https://unsplash.com" alt="Aryan AI Interface" class="img-fluid rounded-4 position-relative border border-secondary border-opacity-10 shadow-lg" style="max-height: 440px; object-fit: cover; width: 100%;">
+                <!-- Floating Back Glow Effect Behind Image -->
+                <div class="position-absolute top-50 start-50 translate-middle rounded-5 opacity-20" style="width: 85%; height: 85%; background: linear-gradient(135deg, #06b6d4, #7c3aed); filter: blur(70px);"></div>
+                <img src="https://unsplash.com" alt="Anas Corporate Diagnostic" class="img-fluid rounded-4 position-relative border border-secondary border-opacity-10 shadow-lg" style="max-height: 420px; object-fit: cover; width: 100%; filter: brightness(0.95);">
             </div>
         </div>
     </section>
 
-    <!-- 3. QUANTUM DATA STATS -->
-    <section class="border-top border-bottom border-secondary border-opacity-10 py-5" style="background: rgba(3,7,18,0.4);">
+    <!-- 3. TRUST FRAME STATS -->
+    <section class="border-top border-bottom border-secondary border-opacity-10 py-5" style="background: rgba(2,6,23,0.5);">
         <div class="container">
             <div class="row text-center g-4">
                 <div class="col-6 col-md-3">
                     <h2 class="fw-bold text-white mb-0 fs-1">15k<span style="color:#06b6d4;">+</span></h2>
-                    <p class="text-uppercase tracking-wider text-muted small mt-1">Patients Managed</p>
+                    <p class="text-uppercase tracking-wider text-muted small mt-2" style="font-size: 11px;">Managed Profiles</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <h2 class="fw-bold text-white mb-0 fs-1">99.8<span style="color:#3b82f6;">%</span></h2>
-                    <p class="text-uppercase tracking-wider text-muted small mt-1">Diagnostic Precision</p>
+                    <h2 class="fw-bold text-white mb-0 fs-1">99.9<span style="color:#3b82f6;">%</span></h2>
+                    <p class="text-uppercase tracking-wider text-muted small mt-2" style="font-size: 11px;">Diagnostic Accuracy</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <h2 class="fw-bold text-white mb-0 fs-1">25<span style="color:#a855f7;">+</span></h2>
-                    <p class="text-uppercase tracking-wider text-muted small mt-1">Elite Consultants</p>
+                    <h2 class="fw-bold text-white mb-0 fs-1">24/7</h2>
+                    <p class="text-uppercase tracking-wider text-muted small mt-2" style="font-size: 11px;">Automated Matrix Support</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <h2 class="fw-bold text-white mb-0 fs-1">Realtime</h2>
-                    <p class="text-uppercase tracking-wider text-muted small mt-1">AI Report Engines</p>
+                    <h2 class="fw-bold text-white mb-0 fs-1">Elite</h2>
+                    <p class="text-uppercase tracking-wider text-muted small mt-2" style="font-size: 11px;">Hospitality Tier</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. LUXURY INTERIOR & PHILOSOPHY -->
-    <section id="about" class="container py-5 my-5">
-        <div class="row align-items-center g-5">
-            <div class="col-md-6">
-                <img src="https://unsplash.com" alt="Aryan Premium Clinic Lab" class="img-fluid rounded-4 border border-secondary border-opacity-10 shadow-lg" style="height: 380px; object-fit: cover; width: 100%;">
-            </div>
-            <div class="col-md-6">
-                <h2 class="fw-bold text-white display-5 mb-4">Elevating Healthcare Into A <span class="gradient-text">Premium Artform.</span></h2>
-                <p class="fw-light mb-4" style="color: #94a3b8; line-height: 1.7;">
-                    Aryan Clinic bypasses traditional medical clutter. We've redesigned our physical infrastructure to match five-star luxury suites, backed by a computational network that streamlines scheduling, check-ins, and automated setups.
-                </p>
-                <div class="d-flex gap-3 mb-3">
+    <!-- 4. CORE SPECIALITIES LAYOUT -->
+    <section id="services" class="container py-5 my-5">
+        <div class="text-center mb-5 pb-3">
+            <h2 class="fw-bold text-white display-5 gradient-title">Operational Tech Departments</h2>
+            <p class="fw-light text-muted small">High-resolution diagnostic execution maps loaded across target specialities.</p>
+        </div>
